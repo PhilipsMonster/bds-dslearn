@@ -14,3 +14,6 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
 
 INSERT INTO tb_course (name, img_uri, img_Gray_Uri) VALUES ('Bootcamp HTML', 'https://cdn.falauniversidades.com.br/wp-content/uploads/2020/04/02122231/ead-1.jpg', 'https://institutoderh.com.br/wp-content/uploads/2020/07/Ativo-2.png');
+
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0',TIMESTAMP WITH TIME ZONE '2021-06-01T03:00:00Z',TIMESTAMP WITH TIME ZONE '2022-06-01T03:00:00Z', 1);
+INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0',TIMESTAMP WITH TIME ZONE '2021-07-01T03:00:00Z',TIMESTAMP WITH TIME ZONE '2022-07-01T03:00:00Z', 1);
