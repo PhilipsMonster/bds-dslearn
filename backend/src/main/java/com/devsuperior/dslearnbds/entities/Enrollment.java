@@ -17,7 +17,7 @@ public class Enrollment {
     @EmbeddedId
     private EnrollmentPK id = new EnrollmentPK();
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-    private Instant enrollMent;
+    private Instant enrollMoment;
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
     private Instant refundMoment;
     private boolean available;
@@ -29,7 +29,7 @@ public class Enrollment {
     public Enrollment(User user, Offer offer, Instant enrollment, Instant refundMoment, boolean available, boolean onlyUpdate) {
         id.setUser(user);
         id.setOffer(offer);
-        this.enrollMent = enrollment;
+        this.enrollMoment = enrollment;
         this.refundMoment = refundMoment;
         this.available = available;
         this.onlyUpdate = onlyUpdate;
@@ -52,11 +52,11 @@ public class Enrollment {
     }
 
     public Instant getEnrollment() {
-        return this.enrollMent;
+        return this.enrollMoment;
     }
 
     public void setEnrollment(Instant enrollment) {
-        this.enrollMent = enrollment;
+        this.enrollMoment = enrollment;
     }
 
     public Instant getRefundMoment() {
